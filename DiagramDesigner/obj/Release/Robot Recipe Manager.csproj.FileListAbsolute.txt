@@ -1,0 +1,33 @@
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\bin\Release\RobotRecipeManager.exe.config
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\bin\Release\RobotRecipeManager.exe
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\bin\Release\RobotRecipeManager.pdb
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\bin\Release\DragNDrop.dll
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\bin\Release\DragNDrop.pdb
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Styles\Expander.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Styles\GroupBox.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Styles\ScrollBar.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Styles\Shared.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Styles\ToolBar.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\App.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Window1.g.cs
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\App.g.cs
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\GeneratedInternalTypeHelper.g.cs
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager_MarkupCompile.cache
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager_MarkupCompile.lref
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\ApplicationToolbar.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Connection.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\DesignerItem.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Stencils\FlowChartStencils.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Stencils\ShapeStencils.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\Toolbox.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Resources\ToolboxItem.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Window1.baml
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager.g.resources
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager.AddChart.resources
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager.Properties.Resources.resources
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Robot Recipe Manager.csproj.GenerateResource.cache
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Robot Recipe Manager.csproj.CoreCompileInputs.cache
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Robot Recipe Manager.csproj.CopyComplete
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager.exe
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\RobotRecipeManager.pdb
+E:\VC\C#\Robot Recipe Manager\Robot Recipe Manager\DiagramDesigner\obj\Release\Robot Recipe Manager.csprojAssemblyReference.cache

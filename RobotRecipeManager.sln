@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotRecipeManager", "RobotRecipeManager.csproj", "{05A86AEE-D28E-4982-BDB7-A041D497A54C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot Recipe Manager", "DiagramDesigner\Robot Recipe Manager.csproj", "{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{05A86AEE-D28E-4982-BDB7-A041D497A54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05A86AEE-D28E-4982-BDB7-A041D497A54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05A86AEE-D28E-4982-BDB7-A041D497A54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05A86AEE-D28E-4982-BDB7-A041D497A54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7BB1C7A1-CB7D-4C51-BF36-E767F2D1C656}
+		SolutionGuid = {4659E4E2-15A5-4BF6-8F91-2F6F4F5EA6E3}
 	EndGlobalSection
 EndGlobal
