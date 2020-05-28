@@ -1,0 +1,96 @@
+﻿<Window x:Class="RobotRecipeManager.Recipe_Creation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:s="clr-namespace:RobotRecipeManager"
+        xmlns:c="clr-namespace:RobotRecipeManager.Controls"
+        Title=" Robot Recipe Manager"
+        Height="850" Width="1000" WindowState="Maximized">
+
+    <Window.Resources>
+        <ContextMenu x:Key="DesignerCanvasContextMenu">
+            <MenuItem Header="Paste" Command="{x:Static ApplicationCommands.Paste}">
+                <MenuItem.Icon>
+                    <Image Source="/RobotRecipeManager;component/Resources/Images/Paste.png" Width="16"/>
+                    <!--Resources/Images/Paste.png-->
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Select All" Command="{x:Static s:DesignerCanvas.SelectAll}"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid Margin="10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Content="{StaticResource MyToolbar}"/>
+
+        <Grid Grid.Row="1" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- Toolbox -->
+            <StackPanel Grid.Column="0" Margin="0,0,0,20" >
+                <Expander x:Name="Flow_Chart" Header="Images/Icons" Content="{StaticResource FlowChartStencils}" IsExpanded="True"/>
+                <Border Grid.Row="0" Grid.Column="0" BorderThickness="10">
+                    <Button Name ="Add_Remove_Img" Content="Add or Remove Images"  Click="Chart_Click"/>
+                </Border>
+                <Grid x:Name="Top_Size_Combo">
+                    <Border Grid.Row="1" Grid.Column="1" BorderThickness="10">
+                        <Label Name="Top_Size_Lbl" Margin="-1,1,2,0">Enter Top Size</Label>
+                    </Border>
+                    <Border Grid.Row="2" Grid.Column="1" BorderThickness="10" Margin="0,25,0,0">
+                        <!--TextBox Name="Top_Size" x:FieldModifier="public"></-->
+                        <ComboBox x:Name="Top_Size" x:FieldModifier="public" SelectionChanged="Top_Size_SelectionChanged" >
+                            <ComboBox.InputBindings>
+                                <KeyBinding />
+                            </ComboBox.InputBindings>
+                        </ComboBox>
+                    </Border>
+                </Grid>
+                <Grid>
+                    <Border Grid.Row="1" Grid.Column="1" BorderThickness="10">
+                        <Label Name="Mass_Lbl" Margin="-1,0,2,0">Enter Mass</Label>
+                    </Border>
+                    <Border Grid.Row="4" Grid.Column="1" BorderThickness="10" Margin="0,25,0,0">
+                        <TextBox Name="Mass" x:FieldModifier="public" PreviewTextInput="NumberValidationTextBox">
+                            <TextBox.InputBindings>
+                                <KeyBinding Command="{x:Static s:DesignerCanvas.Load_Recipe}" Key="Return"/>
+                            </TextBox.InputBindings>
+                        </TextBox>
+                    </Border>
+                </Grid>
+                <!--Expander x:Name="Shapes" Header="Shapes" Content="{StaticResource ShapeStencils}" IsExpanded="True"/-->
+
+            </StackPanel>
+            <!-- GridSplitter -->
+            <GridSplitter Focusable="False" Width="2" Background="LightGray"
+                    VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0,0,0,20"/>
+            <!-- Designer -->
+            <GroupBox Header="Diagram" Grid.Column="1" Margin="3,0,0,20">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+                    <s:DesignerCanvas Focusable="true" x:Name="MyDesigner"
+                            Background="{StaticResource WindowBackgroundBrush}"
+                            Margin="10" FocusVisualStyle="{x:Null}"
+                            ContextMenu="{StaticResource DesignerCanvasContextMenu}"/>
+                </ScrollViewer>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Row="2" Height="Auto" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="0,10,0,-10" Grid.ColumnSpan="2" >
+                <Expander x:Name="Recipe_Data" Header="Recipe_Data" IsExpanded="False" Margin="0,0,0,0">
+                    <DataGrid x:Name="Show_Recipe" ItemsSource="{Binding Create_Recipe_Data}" AutoGenerateColumns="True"/>
+                </Expander>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

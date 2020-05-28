@@ -1,0 +1,81 @@
+﻿<Window x:Class="RobotRecipeManager.Main_Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RobotRecipeManager"
+        mc:Ignorable="d"
+        Title="Main_Menu" Height="650" Width="825" xmlns:RobotRecipeManager="clr-namespace:RobotRecipeManager" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.Resources>
+            <Image x:Key="open" Source="pack://application:,,,/Resources/Images/open.png"/>
+            <Image x:Key="close" Source="pack://application:,,,/Resources/Images/close.png"/>
+        </Grid.Resources>
+        <ToggleButton x:Name="button" Height="100" Width="100" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" IsChecked="True" Checked="button_Checked" Unchecked="button_Unchecked">
+            <ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}">
+                    <Setter Property="Content" Value="{StaticResource open}" />
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Content" Value="{StaticResource close}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ToggleButton.Style>
+        </ToggleButton>
+        <RobotRecipeManager:RadialPanel x:Name="radialpanel" OuterRadius="400" InnerRadius="175" Angle="360" IsClockwise="True" StartAngle="0" ShowBorder="True" ShowPieLines="True" BackgroundOpacity="1">
+            <Button x:Name="Create_Recipe_Template" Click="Button_Click" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Create Recipe Template" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Recipe_Template.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Create_Recipe" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Create Recipe" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Create_Recipe.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="View_Recipe_Template" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="View Recipe Template" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" ></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/View_Template.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Recipe_Linking" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Recipe Linking" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Recipe_Linking.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Results" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Final Results" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Results.png" Height="104" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Recipe_Management" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Recipe Management" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Recipe_Management.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Template_Management" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Template Management" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/Template_Management.png" Height="104"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="Configuration" Width="170" Height="150" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Configurations_Click">
+                <StackPanel>
+                    <TextBlock Foreground="Black" Text="Configurations" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <Image Source="pack://application:,,,/Resources/Images/configuration.png" Height="104"/>
+                </StackPanel>
+            </Button>
+        </RobotRecipeManager:RadialPanel>
+
+        <Popup IsOpen="{Binding IsChecked, ElementName=button}"  PlacementTarget="{Binding ElementName=button}" Placement="Center" PopupAnimation="Fade" AllowsTransparency="True">
+            </Popup>
+    </Grid>
+</Window>
